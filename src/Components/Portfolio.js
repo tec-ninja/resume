@@ -24,7 +24,7 @@ class Portfolio extends Component {
     }
 
     return (
-      <section id="portfolio">
+      <section id="works">
 
       <div className="row">
 

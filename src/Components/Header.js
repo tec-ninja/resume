@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import cn from 'classnames';
 
-class Header extends Component {
-  render() {
+function Header({ data }) {
 
-    if(this.props.data){
-      var name = this.props.data.name;
-      var occupation= this.props.data.occupation;
-      var description= this.props.data.description;
-      var city= this.props.data.address.city;
-      var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-      })
-    }
+   const [current, setCurrent] = useState(0);
+   const { name, occupation, description, address: { city }, social } = data;
+   const links = ['home', 'about', 'resume', 'works', 'testimonials', 'contact'];
+
+   const networks= social.map(function(network){
+      return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
+   })
 
     return (
       <header id="home">
@@ -22,12 +20,13 @@ class Header extends Component {
 	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" className="nav">
-            <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-            <li><a className="smoothscroll" href="#about">About</a></li>
-	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a className="smoothscroll" href="#contact">Contact</a></li>
+            {links.map((link, index) => (
+               <li key={index} className={cn({'current': current === index})} onClick={() => setCurrent(index)}>
+                  <a className='smoothscroll' href={`#${link}`}>
+                     {link}
+                  </a>
+               </li>
+            ))}
          </ul>
 
       </nav>
@@ -49,7 +48,6 @@ class Header extends Component {
 
    </header>
     );
-  }
 }
 
 export default Header;
