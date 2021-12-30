@@ -77,18 +77,28 @@ class Contact extends Component {
 
             <aside className="four columns footer-widgets">
                <div className="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
+					   <h4>Address</h4>
 					   <p className="address">
 						   {name}<br />
 						   {street} <br />
 						   {city}, {state} {zip}<br />
-						   <span>{phone}</span>
+					   </p>
+				   </div>
+               <div className="widget widget_contact">
+					   <h4>Phone</h4>
+					   <p className="address">
+						   {phone}<br />
+					   </p>
+				   </div>
+               <div className="widget widget_contact">
+					   <h4>Email</h4>
+					   <p className="address">
+						   {email}<br />
 					   </p>
 				   </div>
 
-               <div className="widget widget_tweets">
-                  <h4 className="widget-title">Latest Tweets</h4>
+               {/* <div className="widget widget_tweets">
+                  <h4 className="widget-title">Latest Tw</h4>
                   <ul id="twitter">
                      <li>
                         <span>
@@ -107,7 +117,7 @@ class Contact extends Component {
                         <b><a href="#">3 Days Ago</a></b>
                      </li>
                   </ul>
-		         </div>
+		         </div> */}
             </aside>
       </div>
    </section>
