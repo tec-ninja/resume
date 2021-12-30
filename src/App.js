@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
@@ -9,28 +9,21 @@ import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 import data from './data';
 
-class App extends Component {
+function App() {
 
-  constructor(props){
-    super(props);
-    this.state = {
-      resumeData: data
-    };
-  }
+  const resumeData = data;
 
-  render() {
-    return (
-      <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.portfolio}/>
-        <Testimonials data={this.state.resumeData.testimonials}/>
-        <Contact data={this.state.resumeData.main}/>
-        <Footer data={this.state.resumeData.main}/>
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <Header data={resumeData.main}/>
+      <About data={resumeData.main}/>
+      <Resume data={resumeData.resume}/>
+      <Portfolio data={resumeData.portfolio}/>
+      <Testimonials data={resumeData.testimonials}/>
+      <Contact data={resumeData.main}/>
+      <Footer data={resumeData.main}/>
+    </div>
+  );
 }
 
 export default App;
