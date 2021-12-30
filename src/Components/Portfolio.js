@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 function Portfolio(props) {
 
   const [current, setCurrent] = useState(-1);
+  const [activeImage, setActiveImage] = useState(0);
 
   const projects = props.data.projects.map((project, index) => {
     let projectImage = 'images/portfolio/'+project.images[0];
@@ -22,6 +23,11 @@ function Portfolio(props) {
     </div>
   });
 
+  const closeModal = () => {
+    setCurrent(-1);
+    setActiveImage(0);
+  };
+
   return (
     <section id="portfolio">
       <div className="row">
@@ -32,24 +38,35 @@ function Portfolio(props) {
             </div>
           </div>
       </div>
-      {current >= 0 && <div onClick={() => setCurrent(-1)} style={{position: 'fixed', width: '100vw', height: '100vh', top: 0, left: 0, backgroundColor: 'rgba(0, 0, 0, 0.8)', zIndex: 30, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-        <div style={{width: '90%', height: '90%', backgroundColor: 'white', padding: 20}}>
-          <div style={{height: '70%', width: '100%', backgroundColor: 'gray', border: '8px solid gray', display: 'flex', gap: 8}}>
-            <img src={'images/portfolio/' + props.data.projects[current].images[0]} style={{width: '70%', height: '100%'}} />
-            <div style={{flexGrow: 1, display: 'flex'}}>
-              {props.data.projects[current].images.map(img => (
-                <img src={'images/portfolio/' + img} style={{width: '33.3%', height: '16.6%'}} />
-              ))}
+      {current >= 0 && <div onClick={closeModal} style={{position: 'fixed', width: '100vw', height: '100vh', top: 0, left: 0, zIndex: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)'}}>
+        <div style={{width: '90%', height: '90%', backgroundColor: 'white', padding: 20}} onClick={(e) => e.stopPropagation()}>
+          <div style={{height: '100%', width: '100%', display: 'flex', gap: 8}}>
+            <div style={{width: '80%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.72)', padding: 8}}>
+              <img src={'images/portfolio/' + props.data.projects[current].images[activeImage]} style={{width: '100%', height: '90%'}} />
+              <div style={{flexGrow: 1, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '1%', overflow: 'auto'}}>
+                {props.data.projects[current].images.map((img, index) => (
+                  <div key={index} onClick={() => setActiveImage(index)} style={{position: 'relative', width: '7.2%', paddingTop: 8}}>
+                    <div style={{position: 'absolute', zIndex: 10, backgroundColor: 'rgba(0, 0, 0, 0.5)', width: '100%', height: '100%', top: 0, left: 0, display: activeImage === index ? 'none' : 'block'}}></div>
+                    <img src={'images/portfolio/' + img} style={{height: '100%'}} />
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-          <div style={{height: '30%', display: 'flex', flexDirection: 'column', paddingTop: 20}}>
-            <h6>{props.data.projects[current].subtitle}</h6>
-            <div style={{overflow: 'auto', flexGrow: 1}}>
-              {props.data.projects[current].descriptions.map(desc => (
-                <div> • {desc}</div>
-              ))}
+            <div style={{width: '20%', display: 'flex', flexDirection: 'column'}}>
+              <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                  <div style={{fontWeight: 'bold', color: 'black'}}>{props.data.projects[current].title}</div>
+                  <div style={{width: 8, height: 8, fontWeight: 'bold', color: 'black', cursor: 'pointer'}} onClick={closeModal}>✖</div>
+              </div>
+              <div style={{flexGrow: 1, overflow: 'auto'}}>
+                <div style={{color: 'black', fontSize: 13}}>{props.data.projects[current].subtitle}</div>
+                {props.data.projects[current].descriptions.map(desc => (
+                  <div key={desc} style={{fontSize: 12}}> • {desc}</div>
+                ))}
+              </div>
             </div>
+            
           </div>
+          
         </div>
       </div>}
     </section>

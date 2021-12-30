@@ -103,7 +103,14 @@ const data = {
         ],
         "category": "Freelancing sites for talents",
         "images": [
-          "castly.jpg"
+          "castly.jpg",
+          "castly1.jpg",
+          "castly2.jpg",
+          "castly3.jpg",
+          "castly4.jpg",
+          "castly5.jpg",
+          "castly6.jpg",
+          "castly7.jpg"
         ],
         "url": "https://castly.app"
       },
@@ -120,7 +127,18 @@ const data = {
         ],
         "category": "Product analysis and management system for Amazon sellers",
         "images": [
-          "sellerfusion.jpg"
+          "sellerfusion.jpg",
+          "sellerfusion1.jpg",
+          "sellerfusion2.jpg",
+          "sellerfusion3.jpg",
+          "sellerfusion4.jpg",
+          "sellerfusion5.jpg",
+          "sellerfusion6.jpg",
+          "sellerfusion7.jpg",
+          "sellerfusion8.jpg",
+          "sellerfusion9.jpg",
+          "sellerfusion10.jpg",
+          "sellerfusion11.jpg"
         ],
         "url": "https://www.lightfront.ai"
       },
@@ -137,7 +155,12 @@ const data = {
         ],
         "category": "Delivery site in Sydney",
         "images": [
-          "deliverme.jpg"
+          "deliverme.jpg",
+          "deliverme1.jpg",
+          "deliverme2.jpg",
+          "deliverme3.jpg",
+          "deliverme4.jpg",
+          "deliverme5.jpg"
         ],
         "url": "http://www.deliver-me.com.au"
       },
