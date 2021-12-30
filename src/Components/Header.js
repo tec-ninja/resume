@@ -5,7 +5,7 @@ function Header({ data }) {
 
    const [current, setCurrent] = useState(0);
    const { name, occupation, description, address: { city }, social } = data;
-   const links = ['home', 'about', 'resume', 'works', 'testimonials', 'contact'];
+   const links = ['home', 'about', 'resume', 'portfolio', 'testimonials', 'contact'];
 
    const networks= social.map(function(network){
       return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
