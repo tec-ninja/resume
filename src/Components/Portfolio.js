@@ -42,12 +42,12 @@ function Portfolio(props) {
         <div style={{width: '90%', height: '90%', backgroundColor: 'white', padding: 20}} onClick={(e) => e.stopPropagation()}>
           <div style={{height: '100%', width: '100%', display: 'flex', gap: 8}}>
             <div style={{width: '80%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.72)', padding: 8}}>
-              <img src={'images/portfolio/' + props.data.projects[current].images[activeImage]} style={{width: '100%', height: '90%'}} />
+              <img src={'images/portfolio/' + props.data.projects[current].images[activeImage]} alt='Portfolio' style={{width: '100%', height: '90%'}} />
               <div style={{flexGrow: 1, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '1%', overflow: 'auto'}}>
                 {props.data.projects[current].images.map((img, index) => (
                   <div key={index} onClick={() => setActiveImage(index)} style={{position: 'relative', width: '7.2%', paddingTop: 8}}>
                     <div style={{position: 'absolute', zIndex: 10, backgroundColor: 'rgba(0, 0, 0, 0.5)', width: '100%', height: '100%', top: 0, left: 0, display: activeImage === index ? 'none' : 'block'}}></div>
-                    <img src={'images/portfolio/' + img} style={{height: '100%'}} />
+                    <img src={'images/portfolio/' + img} alt='Portfolio thumbnails' style={{height: '100%'}} />
                   </div>
                 ))}
               </div>
