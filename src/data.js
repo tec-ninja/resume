@@ -7,14 +7,14 @@ const data = {
     "bio": "An experienced software engineer with proven records of experience in dozens of industries. Skilled in both frontend and backend",
     "contactmessage": "Feel free to contact me any time if you want me to help you",
     "email": "devstar1112@gmail.com",
-    "phone": "+852 9235 5425",
+    "phone": "+852 2169 0787 ",
     "address": {
       "street": "8 Ventris Road",
       "city": "Happy Valley",
       "state": "Hong Kong",
       "zip": "999077"
     },
-    "website": "http://www.timbakerdev.com",
+    "website": "https://tec-ninja.github.io/resume/",
     "resumedownload": "http://timbakerdev.com",
     "social": [
       {
@@ -43,13 +43,13 @@ const data = {
       {
         "company": "Virgo Talent",
         "title": "Lead Developer",
-        "years": "June 2021 - Present",
+        "years": "April 2021 - Present",
         "description": "A service company based in California which connects talents to casting directors"
       },
       {
         "company": "Light Front",
         "title": "Full stack developer/Lead front end developer",
-        "years": "October 2019 - April 2021",
+        "years": "September 2019 - May 2021",
         "description": "An AI-powered platform with the potential to turn millions of ecommerce brands into household names with global reach"
       },
       {
@@ -57,6 +57,12 @@ const data = {
         "title": "Full stack developer",
         "years": "September 2017 - July 2019",
         "description": "A delivery company based in Sydney which connects clients to freight providers in Australia"
+      },
+      {
+        "company": "Xinjing web-technology",
+        "title": "Junior Web developer",
+        "years": "October 2015 - April 2017",
+        "description": "An IT service company based in Shenyang, China"
       }
     ],
     "skills": [
@@ -66,11 +72,11 @@ const data = {
       },
       {
         "name": "React",
-        "level": "80%"
+        "level": "90%"
       },
       {
         "name": "Vue",
-        "level": "65%"
+        "level": "80%"
       },
       {
         "name": "Node.js",
@@ -81,11 +87,19 @@ const data = {
         "level": "80%"
       },
       {
+        "name": "Laravel",
+        "level": "70%"
+      },
+      {
         "name": "Scraping/ML",
         "level": "60%"
       },
       {
         "name": "Database",
+        "level": "80%"
+      },
+      {
+        "name": "Blockchain",
         "level": "70%"
       }
     ]
@@ -94,11 +108,14 @@ const data = {
     "projects": [
       {
         "title": "Castly",
-        "subtitle": "As a lead developer, I designed project architecture and database structure and defined tech stacks. The main stress is put on speed and performance optimization.",
+        "subtitle": "As a lead developer, I designed project architecture and database structure and defined tech stacks. The main stress is put on speed and performance  optimization.",
         "descriptions": [
-          "Analyze project requirements and define tech stacks and database structure",
+          "Analyze project requirements and define tech stacks and project architecture",
+          "Design database tables and their relationships",
           "Build components and pages with Vue and Tailwind CSS",
           "Design and build Rest APIs with Laravel and PostgreSQL",
+          "Write database migration scripts from MySQL to PostgreSQL",
+          "Review code from other developers and give feedback to improve it",
           "Refactor frontend code and optimize query for speed and performance optimization"
         ],
         "category": "Freelancing sites for talents",
@@ -116,14 +133,15 @@ const data = {
       },
       {
         "title": "Seller Fusion",
-        "subtitle": "As a full stack developer, my goal was to create UIs for product management system utilizing ReactJS + Redux and Amazon SP API with Django. The main focus is to create reusable components to be used in future projects by the team",
+        "subtitle": "The goal was to build product analytic and management system to give Amazon sellers insight of their sales and profit and the way of how to improve them by controlling possible factors. The project is built utilizing React, Django and Amazon SP API. Main focus is to create reusable components to be used by the team for the future scalability",
         "descriptions": [
-          "Restructured the frontend code base Created React Components with Material-UI, making sure they are reusable",
-          "Made rest APIs using Django Rest Framework and integrated them with frontend",
-          "Kept the code quality high reviewing code from other developers and suggesting improvements",
-          "Refactored code and made unit and performance test",
-          "Upgraded NPM libraries and kept the code up to date Interacted with the designer to suggest changes and to make sure the view he has about the design is translated into actual functionality",
-          "Followed Agile principles for managing a project: daily stand-ups, sprints planning, and review"
+          "Restructure and update the existing frontend code base",
+          "Make components with React, Redux and Material-UI, making sure they are reusable",
+          "Keep the code quality high, reviewing code from other developers and suggesting improvements",
+          "Implement Unit/Integration/Performance test",
+          "Upgrade NPM libraries and kept the code base up to date",
+          "Interact with the designer to suggest changes and to make sure the design is translated into actual functionality he expected",
+          "Follow Agile principles for managing a project: daily stand-ups, sprints planning, and review"
         ],
         "category": "Product analysis and management system for Amazon sellers",
         "images": [
@@ -144,14 +162,16 @@ const data = {
       },
       {
         "title": "Deliver Me",
-        "subtitle": "DME is a logistic company which connects companies with freight providers in Australia. As a full stack developer, my role was to develop frontend and backend with React, Django and MySQL.",
+        "subtitle": "Deliver Me is a logistic company which connects clients with freight providers in Australia. As a full stack developer, my role was to develop frontend and backend with React, Django and MySQL.",
         "descriptions": [
-          "Created reusable components with React and React Bootstrap",
-          "Designed and developed database for the system Designed and implemented RESTful APIs",
-          "Updated and built modules and standalone python scripts for labels and other key parts of the system",
-          "Converted React class components to functional ones making sure it's up-to-date",
-          "Interacted with clients and improved system performance and UI/UX as they required",
-          "Improved the existing front structure and made unit test"
+          "Convert class components to functional ones and update node modules",
+          "Build new components and pages with React and React Bootstrap",
+          "Design and build RESTful APIs with Django rest framework",
+          "Update and optimize Django ORM queries for speed and performance",
+          "Integrate new clients and freight providers with system",
+          "Write standalone Python scripts to make labels, manifests and reports",
+          "Interact with clients and improve UI/UX as they require",
+          "Improve the existing front structure and make unit tests"
         ],
         "category": "Delivery site in Sydney",
         "images": [
@@ -166,14 +186,14 @@ const data = {
       },
       {
         "title": "Bull vs Bear",
-        "subtitle": "Bull vs Bear is an online gambling site based on cryptocurrency trend prediction in the next 5 minutes. I worked on this project as a full stack developer who is mainly focused on frontend development and integration with Coinbase pro API on the backend",
+        "subtitle": "Bull vs Bear is to for an online gambling site based on cryptocurrency trend prediction in the next 5 minutes. I worked on this project as a full stack developer who is mainly focused on frontend development and integration of 3rd APIs",
         "descriptions": [
-          "Created reusable components with Preact and responsive pages",
-          "Integrated Coinbase Pro API to get live cryptocurrency price data and built backend APIs with Koa.js",
+          "Create reusable components with Preact and responsive pages",
+          "Integrate Coinbase Pro API to get live cryptocurrency price data and build backend APIs with Koa.js",
           "Test and analyze load performance and get rid of bottlenecks by refactoring codebase",
           "Set up email delivery and messaging system using SendGrid and OneSignal",
-          "Integrated 3rd APIs such as Twitter API, hCaptcha and IPRegistry",
-          "Performed test using Lambda Test, Testi@ and Synk"
+          "Integrate 3rd APIs such as Twitter API, hCaptcha and IPRegistry",
+          "Perform test using Lambda Test, Testi@ and Synk"
         ],
         "category": "Bitcoin trend based gambling site",
         "images": [
@@ -185,10 +205,11 @@ const data = {
         "title": "My Ether Wallet",
         "subtitle": "MyEtherWallet is an online platform that provides users with easy and friendly way of creating wallets and interacting with Ethereum network. The main tech stacks are Vue.js and Web3.js",
         "descriptions": [
-          "Created reusable components with Vue.js and Bootstrap Vue as a UI framework",
-          "Connected to Ethereum network using Web3.js and integrated its APIs",
+          "Create reusable components with Vue.js and Bootstrap Vue as a UI framework",
+          "Write smart contracts that serves as the backend",
+          "Integrate and interact with Ethereum using Web3.js",
           "Write test code using Vue Test Utils and refactored code to improve performance",
-          "Interacted with UI/UX designers and improved UX"
+          "Collaborate with designers and improve UX"
         ],
         "category": "Ethereum wallet service",
         "images": [
@@ -220,7 +241,7 @@ const data = {
         "user": "Pete Walbolt... Project Manager"
       },
       {
-        "text": "Alex must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. I would like to appreciate him for this speedy and smart work!",
+        "text": "Alex must be one of the most brilliant developers I've ever met! I would like to appreciate him for his speedy and smart work!",
         "user": "John Jantzen... CEO"
       }
     ]
