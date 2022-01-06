@@ -4,7 +4,7 @@ const data = {
     "occupation": "Software Engineer",
     "description": "I have worked for several companies in the past 8 years and now I am looking for a new job",
     "image": "profile.png",
-    "bio": "An experienced software engineer with proven records of experience in dozens of industries. Skilled in both frontend and backend",
+    "bio": "An experienced software engineer with proven records of experience in dozens of industries. Skilled in both frontend and backend development. Experienced in block chain development.",
     "contactmessage": "Feel free to contact me any time if you want me to help you",
     "email": "devstar1112@gmail.com",
     "phone": "+852 2169 0787 ",
