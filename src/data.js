@@ -91,16 +91,16 @@ const data = {
         "level": "70%"
       },
       {
-        "name": "Scraping/ML",
-        "level": "60%"
-      },
-      {
         "name": "Database",
         "level": "80%"
       },
       {
         "name": "Blockchain",
         "level": "70%"
+      },
+      {
+        "name": "Scraping/ML",
+        "level": "60%"
       }
     ]
   },
