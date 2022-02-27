@@ -12,7 +12,7 @@ const data = {
       "street": "16 Ane Frank",
       "city": "Subotica",
       "state": "Subotica",
-      "zip": "999077"
+      "zip": "24110"
     },
     "website": "https://tec-ninja.github.io/resume/",
     "resumedownload": "https://tec-ninja.github.io",
