@@ -7,15 +7,15 @@ const data = {
     "bio": "An experienced software engineer with proven records of experience in dozens of industries. Skilled in both frontend and backend development. Experienced in block chain development.",
     "contactmessage": "Feel free to contact me any time if you want me to help you",
     "email": "devstar1112@gmail.com",
-    "phone": "+852 2169 0787 ",
+    "phone": "+1 972 994 6931",
     "address": {
-      "street": "8 Ventris Road",
-      "city": "Happy Valley",
-      "state": "Hong Kong",
+      "street": "16 Ane Frank",
+      "city": "Subotica",
+      "state": "Subotica",
       "zip": "999077"
     },
     "website": "https://tec-ninja.github.io/resume/",
-    "resumedownload": "http://timbakerdev.com",
+    "resumedownload": "https://tec-ninja.github.io",
     "social": [
       {
         "name": "linkedin",
