@@ -80,11 +80,11 @@ const data = {
       },
       {
         "name": "Node.js",
-        "level": "70%"
+        "level": "80%"
       },
       {
         "name": "Django",
-        "level": "80%"
+        "level": "70%"
       },
       {
         "name": "Laravel",
@@ -96,7 +96,7 @@ const data = {
       },
       {
         "name": "Blockchain",
-        "level": "70%"
+        "level": "50%"
       },
       {
         "name": "Scraping/ML",
@@ -200,22 +200,6 @@ const data = {
           "bullvsbear.jpg"
         ],
         "url": "http://www.bullvsbear.to"
-      },
-      {
-        "title": "My Ether Wallet",
-        "subtitle": "MyEtherWallet is an online platform that provides users with easy and friendly way of creating wallets and interacting with Ethereum network. The main tech stacks are Vue.js and Web3.js",
-        "descriptions": [
-          "Create reusable components with Vue.js and Bootstrap Vue as a UI framework",
-          "Write smart contracts that serves as the backend",
-          "Integrate and interact with Ethereum using Web3.js",
-          "Write test code using Vue Test Utils and refactored code to improve performance",
-          "Collaborate with designers and improve UX"
-        ],
-        "category": "Ethereum wallet service",
-        "images": [
-          "myetherwallet.jpg"
-        ],
-        "url": "http://www.myehterwallet.com"
       },
       {
         "title": "My Sound Safe",
