@@ -61,7 +61,7 @@ const data = {
       {
         "company": "Xinjing web-technology",
         "title": "Junior Web developer",
-        "years": "October 2015 - April 2017",
+        "years": "February 2014 - April 2017",
         "description": "An IT service company based in Shenyang, China"
       }
     ],
