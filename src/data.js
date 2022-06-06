@@ -1,6 +1,6 @@
 const data = {
   "main": {
-    "name": "Alex Li",
+    "name": "Alex Lee",
     "occupation": "Software Engineer",
     "description": "I have worked for several companies in the past 8 years and now I am looking for a new job",
     "image": "profile.png",
@@ -10,9 +10,9 @@ const data = {
     "phone": "+1 972 994 6931",
     "address": {
       "street": "16 Ane Frank",
-      "city": "Subotica",
-      "state": "Subotica",
-      "zip": "24110"
+      "city": "Tulita",
+      "state": "NWT",
+      "zip": "X0E"
     },
     "website": "https://tec-ninja.github.io/resume/",
     "resumedownload": "https://tec-ninja.github.io",
