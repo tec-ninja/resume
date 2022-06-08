@@ -9,17 +9,17 @@ const data = {
     "email": "devstar1112@gmail.com",
     "phone": "+1 972 994 6931",
     "address": {
-      "street": "16 Ane Frank",
-      "city": "Tulita",
-      "state": "NWT",
-      "zip": "X0E"
+      "street": "110 E Sterling Way",
+      "city": "Leesburg",
+      "state": "FL",
+      "zip": "34788"
     },
     "website": "https://tec-ninja.github.io/resume/",
     "resumedownload": "https://tec-ninja.github.io",
     "social": [
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/alex-li-08166421b/",
+        "url": "https://www.linkedin.com/in/alex-lee-08166421b/",
         "className": "fa fa-linkedin"
       },
       {
