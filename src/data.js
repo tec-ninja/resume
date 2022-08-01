@@ -9,10 +9,10 @@ const data = {
     "email": "devstar1112@gmail.com",
     "phone": "+1 972 994 6931",
     "address": {
-      "street": "110 E Sterling Way",
-      "city": "Leesburg",
-      "state": "FL",
-      "zip": "34788"
+      "street": "1003 Alamentos",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip": "78201"
     },
     "website": "https://tec-ninja.github.io/resume/",
     "resumedownload": "https://tec-ninja.github.io",
@@ -41,9 +41,15 @@ const data = {
     ],
     "work": [
       {
+        "company": "Self Employment",
+        "title": "Web3 Developer",
+        "years": "2019 - Present",
+        "description": "Worked on several web3 projects for my clients"
+      },
+      {
         "company": "Virgo Talent",
-        "title": "Lead Developer",
-        "years": "April 2021 - Present",
+        "title": "Lead developer",
+        "years": "April 2021 - January 2022",
         "description": "A service company based in California which connects talents to casting directors"
       },
       {
